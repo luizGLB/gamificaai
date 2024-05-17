@@ -102,6 +102,7 @@ header .container-grid {
 
 .conteudo-banner span {
     display: block;
+
     overflow: hidden;
 
     border-right: 5px solid var(--laranja-gamifica);
@@ -113,6 +114,7 @@ header .container-grid {
 }
 
 @keyframes digitando {
+
     from {
         width: 0;
     }
@@ -120,6 +122,7 @@ header .container-grid {
     to {
         width: 100%;
     }
+
 }
 
 @keyframes cursor {
@@ -374,15 +377,15 @@ h2 {
 
 .campo input,
 .campo-descricao textarea {
+
     font-family: "Montserrat";
     font-size: 17px;
 }
 
 .campo input::placeholder,
 .campo-descricao textarea::placeholder {
-    color: #a0a0a0;
+    color: #b9b9b9;
 }
-
 
 .campo input:focus,
 .campo-descricao textarea:focus {
@@ -390,11 +393,12 @@ h2 {
 }
 
 #contato form button {
+
     height: 40px;
     width: 60%;
+
     background-color: var(--laranja-gamifica);
     color: white;
-
     border: none;
     border-radius: 4px;
 
@@ -404,10 +408,10 @@ h2 {
 
     text-transform: uppercase;
 
-
     cursor: pointer;
 
     transition: background-color 500ms;
+
 }
 
 #contato form button:hover {
@@ -415,6 +419,7 @@ h2 {
 }
 
 footer {
+
     height: 290px;
 
     background-color: var(--roxo-gamifica);
@@ -428,6 +433,7 @@ footer .container-grid {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
 }
 
 .redes-sociais {
@@ -454,15 +460,16 @@ footer .container-grid {
 
 .icones-redes a {
     color: white;
-
-
 }
 
 .icones-redes a:hover {
-    color: var(--laranja-gamifica)
+
+    color: var(--laranja-gamifica);
 }
 
+
 @media screen and (max-width: 1300px) {
+
     header {
         position: relative;
     }
@@ -496,17 +503,221 @@ footer .container-grid {
         right: 0px;
     }
 
+
     #sobre {
         padding: 100px 15%;
+
     }
 
     .card {
-        height: 300px;
+        height: 320px;
         width: 200px;
     }
 
     #contato form {
         width: 75%;
+    }
 
+}
+
+@media screen and (max-width: 1080px) {
+
+    .container-cards {
+
+        flex-wrap: wrap;
+
+    }
+
+    .card {
+
+        height: 400px;
+
+        flex-grow: 0;
+        flex-shrink: 0;
+        flex-basis: 40%;
+
+    }
+
+    footer {
+
+        height: unset;
+    }
+
+    footer .container-grid {
+
+        padding: 80px;
+        flex-direction: column;
+    
+    }
+
+    footer img {
+
+        margin-bottom: 100px;
+
+    }
+
+    footer p {
+
+        width: 100%;
+        text-align: center;
+        margin-bottom: 40px;
+
+    }
+
+    .redes-sociais {
+        align-items: center;
+    }
+
+
+
+}
+
+@media screen and (max-width: 800px) {
+
+    .card {
+        flex-basis: 45%;
+    }
+    
+}
+    
+@media screen and (max-width: 700px) {
+    #sobre{
+        height: unset;
+        margin-bottom: 40px;
+    }
+
+    #sobre h2 {
+        margin-bottom: 50px;
+
+    }
+
+    #sobre p {
+        margin-bottom: 30px;
+    }
+
+    #cases, #contato {
+
+        margin-bottom: unset;
+
+    }
+
+    #portfolio a{
+        width: 100%;
+        text-align: center;
+    }
+    
+    .campo, .campo-descricao, #contato form button {
+
+        width: 75%;
+    }
+
+    .banner {
+        background-size: cover;
+    } 
+
+}
+
+@media screen and (max-width: 520px) {
+    .container-grid{
+        width: 90%;
+    } 
+    
+    header img {
+        width: 200px;
+    }
+    
+    .banner {
+        background-size: cover;
+    } 
+
+    .conteudo-banner p {
+        font-size: 24px;
+    }
+
+    nav.menu{ 
+        width: 100%;
+        display: none;
+    }
+
+    #sobre{
+        padding-right: 0px;
+        padding-left: 0px;
+
+    }
+
+    #sobre p {
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    #cases.container-grid{
+
+          width: 100%;
+          margin: unset;
+    }
+
+    .container-cards{
+
+        flex-wrap: nowrap;
+
+        gap: 40px;
+
+        overflow-x: auto;
+    }
+
+    .card {
+        height: 400px;
+        width: 280px;
+
+        flex-basis: unset;
+    }
+
+    .card:first-child{
+        margin-left: 30px;
+    }
+
+    .card:last-child{
+        margin-right: 30px;
+    }
+
+    #portfolio {
+
+        margin-bottom: 0;
+    }
+
+    #contato{
+        padding-top: 150px;
+
+        background-color: var(--roxo-gamifica);
+        color: white;
+    }
+
+    #contato h2 {
+        margin-bottom: 0;
+    }
+
+    #contato form{
+        width: 100%;
+        border-radius: 0;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    header img {
+        width: 160px;
+    }    
+
+    header svg {
+        width: 40px;
+    }
+
+    .conteudo-banner p {
+        font-size: 20px;
+    }
+
+    footer img {
+        width: 200px;
+        
     }
 }
